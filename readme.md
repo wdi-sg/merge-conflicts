@@ -20,7 +20,7 @@ Once the repository is created on GitHub, follow these steps inside of your sand
 5. `git commit -m "initial commit"`
 6. `git remote add origin <the_url_to_your_repo>`
 6. `git push -u origin master`
-7. `atom .`
+7. `code .`
 
 **Student 2**
 
@@ -31,7 +31,7 @@ After Student 1 has pushed their code:
 1. `git clone <url>`
 2. `cd emergency_compliment`
 3. `npm install`
-7. `atom .`
+7. `code .`
 
 ## Making Your First Contributions
 
