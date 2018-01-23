@@ -35,7 +35,7 @@ After Student 1 has pushed their code:
 
 ## Making Your First Contributions
 
-**Both Students**
+**Both Students (pair program on one computer)**
 
 * Check out a new feature branch and create a Hello component. It should take the users' name, and return `Hello {name}`. Keep it simple!
 
@@ -45,9 +45,8 @@ After Student 1 has pushed their code:
 
 * If there are no conflicts, merge your pull request and delete your feature branches!
 
-* If there are merge conflicts, WAIT to merge the conflicts until the next `Exercise`.  You will need to `git pull` the latest changes, resolve the conflict, then `commit` again.
+* If there are merge conflicts resolve them through github. You will then need to `git pull` the latest changes, resolve any conflicts locally, then `commit` and push again.
 
-Next, try to break it!!!!
 
 ### Creating A Merge Conflict
 
@@ -61,6 +60,7 @@ Next, try to break it!!!!
 
 * **Note** If you encounter a merge conflict, work together to resolve it before continuing. Then push up the changes!
 
+**Both Students( pair program on one computer)**
 * Check out a new feature branch, and create a new `Compliment` component. It should return a random compliment from the list below:
 
 ```
@@ -69,13 +69,13 @@ var data  = ["Good effort!", "What a fine sweater!", "I appreciate all of your o
 
 * Push your branch and make a PR. Merge your changes in to `master` together. Both of you should then pull `master` to get the latest changes
 
-**Both Students**
+**Both Students (individually)**
 
 * Check out a feature branch locally.
 
 **Student 1**
 
-* Rename the `Compliment` component to `Compliments`.
+* Rename the `Compliment` component class to `Compliments`.
 
 **Student 2**
 
@@ -91,12 +91,12 @@ var data  = ["Good effort!", "What a fine sweater!", "I appreciate all of your o
 
 **Both Students**
 
-On Student 2's computer, look over the merge conflicts, resolve them locally, commit, and push.
+On Student 2's computer, look over the merge conflicts, resolve them locally and commit.
 
 **Student 2**
 
 Push your feature branch to GitHub using `git push origin <branch>`. Then create a PR, and merge your branch into master.
 
-**Student 1**
+**Both Students (individually)**
 
-Pull down the changes to `master`
+Pull down the changes to `master`.
