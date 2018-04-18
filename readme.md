@@ -15,12 +15,12 @@ Once the repository is created on GitHub, follow these steps inside of your sand
 
 1. `mkdir emergency_compliment`
 2. `cd emergency_compliment`
-3. `create-react-app .`
+3. `rails new ./ -d postgresql`
 4. `git add .`
 5. `git commit -m "initial commit"`
 6. `git remote add origin <the_url_to_your_repo>`
 6. `git push -u origin master`
-7. `code .`
+7. `sublime .`
 
 **Student 2**
 
@@ -30,8 +30,8 @@ After Student 1 has pushed their code:
 
 1. `git clone <url>`
 2. `cd emergency_compliment`
-3. `npm install`
-7. `code .`
+3. `bundle install`
+7. `sublime .`
 
 ## Making Your First Contributions
 
