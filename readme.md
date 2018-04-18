@@ -68,6 +68,16 @@ end
 
 * First, make sure all remote `PRs` and branches have been merged together. Once your changes are successfully merged, delete your feature branches from GitHub and your local machines.
 
+> to delete a git branch:
+
+> on github:
+
+> `git push origin --delete <the-remote-branch-name>`
+
+> on your computer:
+
+> `git branch -D <the-local-branch-name>`
+
 * **Locally**, make sure you are checked out to our `master` branch.
 
 * Then, do a `git pull origin master` to receive the latest changes.
@@ -75,7 +85,11 @@ end
 * **Note** If you encounter a merge conflict, work together to resolve it before continuing. Then push up the changes!
 
 **Both Students( pair program on one computer)**
-* Check out a new feature branch, and create a new model method `tax`.
+* Check out a new feature branch
+```
+git checkout -b <your-feature-branch-name>
+```
+* create a new model method `tax`.
 ```
 def tax( price )
   price * 7.5
@@ -87,6 +101,9 @@ end
 **Both Students (individually)**
 
 * Check out a feature branch locally.
+```
+git checkout -b <your-feature-name>
+```
 
 **Student 1**
 
