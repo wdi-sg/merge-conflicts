@@ -37,7 +37,21 @@ After Student 1 has pushed their code:
 
 **Both Students (pair program on one computer)**
 
-* Check out a new feature branch and create a Hello component. It should take the users' name, and return `Hello {name}`. Keep it simple!
+* Check out a new feature branch and create a fruits model.
+
+```
+rails g model fruit name weight:integer
+rails db:create
+rails db:migrate
+```
+* make a method in the model
+```
+class Fruit < ApplicationRecord
+  def standard_weight
+    weight * 2.2
+  end
+end
+```
 
 * Commit your changes and push them to the remote repo using this command `git push origin <branch name>`. Open a pull request on Github to merge the changes from your feature branch into `master`.
 
@@ -61,10 +75,11 @@ After Student 1 has pushed their code:
 * **Note** If you encounter a merge conflict, work together to resolve it before continuing. Then push up the changes!
 
 **Both Students( pair program on one computer)**
-* Check out a new feature branch, and create a new `Compliment` component. It should return a random compliment from the list below:
-
+* Check out a new feature branch, and create a new model method `tax`.
 ```
-var data  = ["Good effort!", "What a fine sweater!", "I appreciate all of your opinions.", "I like your style.", "Your T-shirt smells fresh.", "I love what you've done with the place.", "You are like a spring flower; beautiful and vivacious.", "I am utterly disarmed by your wit.", "I really enjoy the way you pronounce the word 'ruby'.", "You complete me.", "Well done!", "I like your Facebook status.", "That looks nice on you.", "I like those shoes more than mine.", "Nice motor control!", "You have a good taste in websites.", "Your mouse told me that you have very soft hands.", "You are full of youth.", "I like your jacket.", "I like the way you move.", "You have a good web-surfing stance.", "You should be a poster child for poster children.", "Nice manners!", "I appreciate you more than Santa appreciates chimney grease.", "I wish I was your mirror.", "I find you to be a fountain of inspiration.", "You have perfect bone structure.", "I disagree with anyone who disagrees with you.", "Way to go!", "Have you been working out?", "With your creative wit, I'm sure you could come up with better compliments than me.", "I like your socks.", "You are so charming.", "Your cooking reminds me of my mother's.", "You're tremendous!", "You deserve a compliment!", "Hello, good looking."];
+def tax( price )
+  price * 7.5
+end
 ```
 
 * Push your branch and make a PR. Merge your changes in to `master` together. Both of you should then pull `master` to get the latest changes
@@ -75,11 +90,11 @@ var data  = ["Good effort!", "What a fine sweater!", "I appreciate all of your o
 
 **Student 1**
 
-* Rename the `Compliment` component class to `Compliments`.
+* Rename the `tax` method to `fruits_taxes`.
 
 **Student 2**
 
-* Change `var data` to `const compliments`
+* Add param `tax_percent` to the method. Change the calculation. 
 
 **Student 1**
 
