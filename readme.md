@@ -11,15 +11,14 @@ With your pair, decide who will play the role of Student 1 and Student 2!
 - Create a new repository on GitHub named "emergency_compliment". Don't select the "Initialize this repository with a README" option on GitHub!
 - Add the second student as a collaborator to your repo by going to the Settings tab then selecting "Collaborators & Teams" on the left.
 
-Once the repository is created on GitHub, follow these steps inside of your sandbox:
+Once the repository is created on GitHub, follow these steps:
 
-1. `mkdir emergency_compliment`
+1. `git clone <repo>`
 2. `cd emergency_compliment`
 3. `rails new ./ -d postgresql`
 4. `git add .`
 5. `git commit -m "initial commit"`
-6. `git remote add origin <the_url_to_your_repo>`
-6. `git push -u origin master`
+6. `git push origin master`
 7. `sublime .`
 
 **Student 2**
